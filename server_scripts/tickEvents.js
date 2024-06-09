@@ -1,8 +1,3 @@
-//! UMBRELLA SLOW FALL EFFECT
-PlayerEvents.tick(tick => {
-if (tick.player.mainHandItem != 'kubejs:umbrella') return
-if (!tick.player.isOnGround()) tick.player.potionEffects.add('slow_falling', 1, 0)
-})
 //! SYMPHONY OF THE SEAS EFFECT
 PlayerEvents.tick(tick =>{
     if (tick.player.mainHandItem != 'kubejs:symphony_of_the_seas') return

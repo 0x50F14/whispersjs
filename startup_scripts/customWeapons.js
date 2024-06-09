@@ -8,20 +8,6 @@ tier.enchantmentValue = 14
 })
 })
 StartupEvents.registry('item', e => {
-//! ZHEUS SWORD
-e.create('zheus_sword', 'sword')
-.displayName('Stormbreaker')
-.parentModel('kubejs:item/zheus_sword')
-.tier('sussurro')
-.rarity('epic')
-
-//! UMBRELLA
-e.create('umbrella', 'sword')
-.displayName("Umbrella")
-.parentModel('kubejs:item/spina_de_parapluie')
-.tier('sussurro')
-.rarity('epic')
-
 //! SCYTHE
 e.create('scythe', 'sword')
 .displayName("Foice")
