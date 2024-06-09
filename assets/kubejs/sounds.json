@@ -1,0 +1,25 @@
+{
+    "clown_horn": {
+        "category": "neutral",
+        "subtitle": "Clown Horn Sound",
+        "sounds": ["kubejs:clown_horn_sound"]
+    },
+
+    "shell_whistle": {
+        "category": "neutral",
+        "subtitle": "Shell Whistle Sound",
+        "sounds": ["kubejs:shell_whistle_sound"]
+    },
+    
+    "rubber_duck": {
+        "category": "neutral",
+        "subtitle": "Rubber Duck Sound",
+        "sounds": ["kubejs:rubber_duck_sound"]
+    },
+
+    "polaroid_camera": {
+        "category": "neutral",
+        "subtitle": "Polaroid Camera Sound",
+        "sounds": ["kubejs:polaroid_camera_sound"]
+    }
+}

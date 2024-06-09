@@ -1,0 +1,6 @@
+{
+	"parent": "kubejs:item/big_handheld",
+	"textures": {
+		"layer0": "kubejs:item/weapons/scythe"
+	}
+}
