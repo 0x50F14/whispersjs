@@ -2,7 +2,7 @@ ItemEvents.toolTierRegistry(event => {
 event.add('sussurro', tier => {
 tier.uses = 999
 tier.speed = 8.0
-tier.attackDamageBonus = 20.0
+tier.attackDamageBonus = 14.0
 tier.level = 5
 tier.enchantmentValue = 14
 })
@@ -29,28 +29,33 @@ e.create('dagger', 'sword')
 .tier('sussurro')
 .rarity('epic')
 
-//! TRIDENT
-e.create('trident', 'sword')
-.displayName("Tridente")
-.texture('kubejs:item/weapons/trident')
-.tier('sussurro')
-.rarity('epic')
-
-//! BLOOD KATANA
-e.create('blood_katana', 'sword')
-.displayName("Katana de Sangue")
-.texture('kubejs:item/blood_katana')
-.rarity('epic')
-.tier('sussurro')
-.unstackable()
-
 //! KAMA
 e.create('kama', 'sword')
 .displayName("Kama")
 .texture('kubejs:item/weapons/kama')
 .rarity('epic')
 .tier('sussurro')
-.unstackable()
+
+//! VALHAKYRA
+e.create('valhakyra', 'sword')
+.displayName("Valhakyra")
+.texture('kubejs:item/weapons/valhakyra')
+.tier('sussurro')
+.rarity('epic')
+
+//! CERNUNNOS
+e.create('cernunnos', 'sword')
+.displayName("Cernunnos")
+.texture('kubejs:item/weapons/cernunnos')
+.tier('sussurro')
+.rarity('epic')
+
+//! NOGITSUNE
+e.create('nogitsune', 'sword')
+.displayName("Nogitsune")
+.texture('kubejs:item/weapons/nogitsune')
+.tier('sussurro')
+.rarity('epic')
 })
 
 

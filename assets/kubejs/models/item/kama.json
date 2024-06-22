@@ -1,9 +1,8 @@
 {
-	"credit": "Stonedudis",
+	"credit": "Made by Stonedudis",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "kubejs:item/kama",
-		"particle": "kubejs:item/kama"
+		"0": "kubejs:item/weapons/kama"
 	},
 	"elements": [
 		{

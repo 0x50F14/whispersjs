@@ -15,7 +15,7 @@ if (event.item.id != "kubejs:strawberry_wand") return
 WandParticleEvent(event, "minecraft:heart", x, y, z)
 })
 //! NETUNO OCARINA WEATHER CHANGE
-ItemEvents.rightClicked(e => {
+    ItemEvents.rightClicked(e => {
 if (e.item.id != "kubejs:ocarina") return
 if (e.entity.offHandItem == "kubejs:clean_manuscript")
     e.server.runCommandSilent(`weather clear`)

@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "kubejs:item/valhakyra",
-		"particle": "kubejs:item/valhakyra"
+		"0": "kubejs:item/weapons/valhakyra",
+		"particle": "kubejs:item/weapons/valhakyra"
 	},
 	"elements": [
 		{

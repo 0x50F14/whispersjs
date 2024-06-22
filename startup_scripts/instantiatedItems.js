@@ -2,8 +2,11 @@ const $bowItem = Java.loadClass('net.minecraft.world.item.BowItem')
 const $ItemProperties = Java.loadClass('net.minecraft.world.item.Item$Properties')
 const $kubejs = Java.loadClass('dev.latvian.mods.kubejs.KubeJS')
 
+const $tridentItem = Java.loadClass('net.minecraft.world.item.TridentItem')
+
 StartupEvents.registry('item', event => {
     event.createCustom('kubejs:cupid_bow', () => new $bowItem(new $ItemProperties().tab($kubejs.tab).defaultDurability(23)))
+    event.createCustom('kubejs:pink_trident', () => new $tridentItem(new $ItemProperties().tab($kubejs.tab).defaultDurability(23)))
 })
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingGetProjectileEvent', event => {

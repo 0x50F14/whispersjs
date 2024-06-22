@@ -40,4 +40,5 @@ e.create('empty_noitosfera')
 .texture('kubejs:item/foods/empty_noitosfera')
 .group('food')
 .rarity('epic')
+
 })
