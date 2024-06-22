@@ -16,4 +16,8 @@ event.shapeless('kubejs:zanee_block', [
 event.shapeless('kubejs:vaccine_vials', [
   'minecraft:glass_bottle',
   'minecraft:blue_dye',])
+//! REMOVE JETPACK CRAFT
+event.remove({ output: 'create_sa:copper_jetpack_chestplate' })
+event.remove({ output: 'create_sa:andesite_jetpack_chestplate' })
+event.remove({ output: 'create_sa:brass_jetpack_chestplate' })
 })
