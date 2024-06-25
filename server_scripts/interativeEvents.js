@@ -1,7 +1,7 @@
 //! SYRINGE
 ItemEvents.rightClicked('kubejs:syringe', event => {
 if(event.target.type != "minecraft:player" && event.item.id != "kubejs:syringe") return
-if (event.entity.offHandItem != "kubejs:vaccine_vial") {
+if(event.entity.offHandItem != "kubejs:vaccine_vial") {
 event.player.tell(Text.red("Você precisa estar segurando um frasco de vacina."))
 return
 }

@@ -56,6 +56,13 @@ e.create('nogitsune', 'sword')
 .texture('kubejs:item/weapons/nogitsune')
 .tier('sussurro')
 .rarity('epic')
+
+//! CLOWN STICK
+e.create('clown_stick', 'sword')
+.displayName(":o)")
+.texture('kubejs:item/weapons/clown_stick')
+.tier('sussurro')
+.rarity('epic')
 })
 
 

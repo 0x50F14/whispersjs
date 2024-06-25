@@ -12,8 +12,8 @@ event.shapeless('kubejs:zanee_block', [
   'minecraft:red_dye',
   'minecraft:black_dye',
   'minecraft:blue_dye',])
-//! VACCINE VIALS
-event.shapeless('kubejs:vaccine_vials', [
+//! VACCINE VIAL
+event.shapeless('kubejs:vaccine_vial', [
   'minecraft:glass_bottle',
   'minecraft:blue_dye',])
 //! REMOVE JETPACK CRAFT
