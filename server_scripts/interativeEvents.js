@@ -14,4 +14,9 @@ event.player.tell(Text.green(new Date().toLocaleDateString()))
 event.player.tell(Text.green("------------------------------"))
 event.server.runCommandSilent(`clear ${event.player.username} kubejs:vaccine_vial 1`);
 event.player.addItemCooldown('kubejs:syringe', 5)
+
+event.target.entity.tell(Text.green("------------------------------"))
+event.target.entity.tell(Text.green('Vacina aplicada em: '+ event.target.entity.name.string))
+event.target.entity.tell(Text.green(new Date().toLocaleDateString()))
+event.target.entity.tell(Text.green("------------------------------"))
 })

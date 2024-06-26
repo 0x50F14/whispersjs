@@ -2,7 +2,7 @@ ItemEvents.toolTierRegistry(event => {
 event.add('sussurro', tier => {
 tier.uses = 999
 tier.speed = 8.0
-tier.attackDamageBonus = 14.0
+tier.attackDamageBonus = 8.0
 tier.level = 5
 tier.enchantmentValue = 14
 })
@@ -60,7 +60,7 @@ e.create('nogitsune', 'sword')
 //! CLOWN STICK
 e.create('clown_stick', 'sword')
 .displayName(":o)")
-.texture('kubejs:item/weapons/clown_stick')
+.parentModel('kubejs:item/clown_weapon')
 .tier('sussurro')
 .rarity('epic')
 })

@@ -1,9 +1,8 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by LKing",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "kubejs:item/weapons/clown_sitck",
-		"particle": "kubejs:item/clown_sitck"
+		"0": "kubejs:item/weapons/clown_stick"
 	},
 	"elements": [
 		{

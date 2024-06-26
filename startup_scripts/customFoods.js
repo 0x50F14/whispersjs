@@ -41,4 +41,30 @@ e.create('empty_noitosfera')
 .group('food')
 .rarity('epic')
 
+//! CIGAS
+e.create('cigas').food(food => {
+    food
+    .hunger(10)
+    .saturation(2)
+    .eaten(ctx => {
+        
+    })})
+    .displayName('Cigarro de Palhaço')
+    .parentModel('kubejs:item/cigas')
+    .group('food')
+    .rarity('epic')
+
+//! POTE
+e.create('pote').food(food => {
+    food
+    .hunger(10)
+    .saturation(2)
+    .eaten(ctx => {
+        
+    })})
+    .displayName('Sopa da Felicidade')
+    .parentModel('kubejs:item/pote')
+    .group('food')
+    .rarity('epic')
+
 })
