@@ -2,8 +2,8 @@ StartupEvents.registry('item', e => {
 //! NOITOSFERA
 e.create('noitosfera').food(food => {
 food
-.hunger(30)
-.saturation(30)
+.hunger(5)
+.saturation(1)
 .alwaysEdible()
 .fastToEat()
 .eaten(ctx => {
@@ -13,19 +13,53 @@ food
 .texture('kubejs:item/foods/noitosfera')
 .group('food')
 .rarity('epic')
+//! NOITOSFERA WITH BLOOD
+e.create('noitosfera_with_blood').food(food => {
+    food
+.hunger(5)
+.saturation(1)
+.alwaysEdible()
+.fastToEat()
+.effect('instant_health', 150, 2, 1)
+.effect('strength', 150, 2, 1)
+.effect('speed', 150, 0, 1)
+.eaten(ctx => {
+    ctx.player.give('kubejs:empty_noitosfera')
+})})
+.displayName('Noitosfera preenchida com sangue')
+.texture('kubejs:item/foods/noitosfera')
+.group('food')
+.rarity('epic')
+
+//! NOITOSFERA WITH JUICE
+e.create('noitosfera_with_juice').food(food => {
+    food
+    .hunger(5)
+    .saturation(1)
+    .alwaysEdible()
+    .fastToEat()
+    .effect('instant_health', 10, 1, 1)
+    .effect('regeneration', 10, 0, 1)
+    .eaten(ctx => {
+        ctx.player.give('kubejs:empty_noitosfera')
+    })})
+    .displayName('Noitosfera preenchida com suquinho de morango')
+    .texture('kubejs:item/foods/noitosfera')
+    .group('food')
+    .rarity('epic')
 
 //! NOITOSFERA WITH WINE
 e.create('noitosfera_with_wine').food(food => {
 food
-.hunger(30)
-.saturation(30)
+.hunger(5)
+.saturation(1)
 .alwaysEdible()
 .fastToEat()
-.effect('nausea', 50, 1, 1)
-.effect('instant_health', 600, 9, 1)
-.effect('regeneration', 600, 9, 1)
-.effect('strength', 600, 9, 1)
-.effect('speed', 600, 0, 1)
+.effect('nausea', 20, 2, 1)
+.effect('instant_health', 150, 1, 1)
+.effect('regeneration', 150, 0, 1)
+.effect('strength', 150, 0, 1)
+.effect('speed', 150, 0, 1)
 .eaten(ctx => {
     ctx.player.give('kubejs:empty_noitosfera')
 })})
@@ -44,10 +78,9 @@ e.create('empty_noitosfera')
 //! CIGAS
 e.create('cigas').food(food => {
     food
-    .hunger(10)
-    .saturation(2)
+    .hunger(5)
+    .saturation(1)
     .eaten(ctx => {
-        
     })})
     .displayName('Cigarro de Palhaço')
     .parentModel('kubejs:item/cigas')
@@ -57,14 +90,12 @@ e.create('cigas').food(food => {
 //! POTE
 e.create('pote').food(food => {
     food
-    .hunger(10)
-    .saturation(2)
+    .hunger(5)
+    .saturation(1)
     .eaten(ctx => {
-        
     })})
     .displayName('Sopa da Felicidade')
     .parentModel('kubejs:item/pote')
     .group('food')
     .rarity('epic')
-
 })

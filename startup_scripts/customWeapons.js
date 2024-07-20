@@ -8,13 +8,6 @@ tier.enchantmentValue = 14
 })
 })
 StartupEvents.registry('item', e => {
-//! SCYTHE
-e.create('scythe', 'sword')
-.displayName("Foice")
-.texture('kubejs:item/weapons/scythe')
-.tier('sussurro')
-.rarity('epic')
-
 //! KNIFE
 e.create('knife', 'sword')
 .displayName("Faca")
@@ -50,10 +43,17 @@ e.create('cernunnos', 'sword')
 .tier('sussurro')
 .rarity('epic')
 
-//! NOGITSUNE
+//* NOGITSUNE
 e.create('nogitsune', 'sword')
 .displayName("Nogitsune")
 .texture('kubejs:item/weapons/nogitsune')
+.tier('sussurro')
+.rarity('epic')
+
+//! BRASA
+e.create('brasa_katana', 'sword')
+.displayName("Brasa")
+.parentModel('kubejs:item/tiordakatana')
 .tier('sussurro')
 .rarity('epic')
 
@@ -61,6 +61,20 @@ e.create('nogitsune', 'sword')
 e.create('clown_stick', 'sword')
 .displayName(":o)")
 .parentModel('kubejs:item/clown_weapon')
+.tier('sussurro')
+.rarity('epic')
+
+//! SCYTHE
+e.create('spiritual_scynthe', 'sword')
+.displayName("Foice Espiritual")
+.parentModel('kubejs:item/spiritual_scythe')
+.tier('sussurro')
+.rarity('epic')
+
+//! DEMON SWORD
+e.create('demon_sword', 'sword')
+.displayName("Demon Sword - Test")
+.parentModel('kubejs:item/demon_sword')
 .tier('sussurro')
 .rarity('epic')
 })

@@ -8,13 +8,112 @@ event.shaped('3x minecraft:leather', [
   A: 'minecraft:rotten_flesh',
 }
 )
+//! MAGATAMA DEFAULT CRAFT
+event.shapeless('kubejs:default_magatama', [
+  'kubejs:strength_magatama',
+  'minecraft:stone',])
+event.shapeless('kubejs:default_magatama', [
+  'kubejs:speed_magatama',
+  'minecraft:stone',])
+event.shapeless('kubejs:default_magatama', [
+  'kubejs:jump_magatama',
+  'minecraft:stone',])
+event.shapeless('kubejs:default_magatama', [
+  'kubejs:nvision_magatama',
+  'minecraft:stone',])
+event.shapeless('kubejs:default_magatama', [
+  'kubejs:invisibility_magatama',
+  'minecraft:stone',])
+//! MAGATAMA STRENGTH CRAFT
+event.shapeless('kubejs:strength_magatama', [
+  'kubejs:default_magatama',
+  'minecraft:diamond_sword',]).replaceIngredient('minecraft:diamond_sword', 'minecraft:diamond_sword')
+event.shapeless('kubejs:strength_magatama', [
+  'kubejs:speed_magatama',
+  'minecraft:diamond_sword',]).replaceIngredient('minecraft:diamond_sword', 'minecraft:diamond_sword')
+event.shapeless('kubejs:strength_magatama', [
+  'kubejs:jump_magatama',
+  'minecraft:diamond_sword',]).replaceIngredient('minecraft:diamond_sword', 'minecraft:diamond_sword')
+event.shapeless('kubejs:strength_magatama', [
+  'kubejs:nvision_magatama',
+  'minecraft:diamond_sword',]).replaceIngredient('minecraft:diamond_sword', 'minecraft:diamond_sword')
+event.shapeless('kubejs:strength_magatama', [
+  'kubejs:invisibility_magatama',
+  'minecraft:diamond_sword',]).replaceIngredient('minecraft:diamond_sword', 'minecraft:diamond_sword')
+//! MAGATAMA SPEED CRAFT
+event.shapeless('kubejs:speed_magatama', [
+  'kubejs:strength_magatama',
+  'minecraft:bone',])
+event.shapeless('kubejs:speed_magatama', [
+  'kubejs:default_magatama',
+  'minecraft:bone',])
+event.shapeless('kubejs:speed_magatama', [
+  'kubejs:jump_magatama',
+  'minecraft:bone',])
+event.shapeless('kubejs:speed_magatama', [
+  'kubejs:nvision_magatama',
+  'minecraft:bone',])
+event.shapeless('kubejs:speed_magatama', [
+  'kubejs:invisibility_magatama',
+  'minecraft:bone',])
+//! MAGATAMA JUMP BOOST CRAFT
+event.shapeless('kubejs:jump_magatama', [
+  'kubejs:strength_magatama',
+  'minecraft:carrot',])
+event.shapeless('kubejs:jump_magatama', [
+  'kubejs:speed_magatama',
+  'minecraft:carrot',])
+event.shapeless('kubejs:jump_magatama', [
+  'kubejs:default_magatama',
+  'minecraft:carrot',])
+event.shapeless('kubejs:jump_magatama', [
+  'kubejs:nvision_magatama',
+  'minecraft:carrot',])
+event.shapeless('kubejs:jump_magatama', [
+  'kubejs:invisibility_magatama',
+  'minecraft:carrot',])
+//! MAGATAMA NIGHT VISION CRAFT
+event.shapeless('kubejs:nvision_magatama', [
+  'kubejs:strength_magatama',
+  'minecraft:ender_pearl',])
+event.shapeless('kubejs:nvision_magatama', [
+  'kubejs:speed_magatama',
+  'minecraft:ender_pearl',])
+event.shapeless('kubejs:nvision_magatama', [
+  'kubejs:jump_magatama',
+  'minecraft:ender_pearl',])
+event.shapeless('kubejs:nvision_magatama', [
+  'kubejs:default_magatama',
+  'minecraft:ender_pearl',])
+event.shapeless('kubejs:nvision_magatama', [
+  'kubejs:invisibility_magatama',
+  'minecraft:ender_pearl',])
+//! MAGATAMA INVISIBILITY CRAFT
+event.shapeless('kubejs:invisibility_magatama', [
+  'kubejs:strength_magatama',
+  'minecraft:glass',])
+event.shapeless('kubejs:invisibility_magatama', [
+  'kubejs:speed_magatama',
+  'minecraft:glass',])
+event.shapeless('kubejs:invisibility_magatama', [
+  'kubejs:jump_magatama',
+  'minecraft:glass',])
+event.shapeless('kubejs:invisibility_magatama', [
+  'kubejs:nvision_magatama',
+  'minecraft:glass',])
+event.shapeless('kubejs:invisibility_magatama', [
+  'kubejs:default_magatama',
+  'minecraft:glass',])
 //! NOITOSFERAS
 event.shapeless('kubejs:noitosfera', [
 'minecraft:red_dye',
 'kubejs:empty_noitosfera',])
 event.shapeless('kubejs:noitosfera_with_wine', [
 'croptopia:wine',
-'kubejs:empty_noitosfera',]).replaceIngredient('croptopia:wine', 'croptopia:wine')
+'kubejs:empty_noitosfera',])
+event.shapeless('kubejs:noitosfera_with_juice', [
+  'croptopia:strawberry_smoothie',
+  'kubejs:empty_noitosfera',])
 //! ZANEE BLOCK
 event.shapeless('kubejs:zanee_block', [
   'minecraft:dirt',

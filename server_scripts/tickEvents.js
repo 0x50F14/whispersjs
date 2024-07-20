@@ -1,10 +1,4 @@
 //! SYMPHONY OF THE SEAS EFFECT
-PlayerEvents.tick(tick =>{
-    if (tick.player.mainHandItem != 'kubejs:symphony_of_the_seas') return
-    if (tick.player.isInWater()) {
-        tick.player.potionEffects.add('strength', 1, 0)
-        tick.player.potionEffects.add('water_breathing', 1, 0)}
-})
 const checkForIDs = [
     "kubejs:symphony_of_the_seas"
 ];
@@ -17,3 +11,21 @@ PlayerEvents.tick(tick =>{
             player.potionEffects.add('water_breathing', 1, 0)
         }
 })
+
+//! MAGATAMA
+PlayerEvents.tick(tick =>{
+    let player = tick.player
+    let inventory = player.inventory.getAllItems();
+    for(const item of inventory)
+        if("kubejs:strength_magatama" == item.id){
+            player.potionEffects.add('strength', 1, 1)
+        }else if("kubejs:speed_magatama" == item.id){
+            player.potionEffects.add('speed', 1, 1)
+        }else if("kubejs:jump_magatama" == item.id){
+            player.potionEffects.add('jump_boost', 1, 1)
+        }else if("kubejs:nvision_magatama" == item.id){
+            player.potionEffects.add('night_vision', 1, 1)
+        }else if("kubejs:invisibility_magatama" == item.id){
+            player.potionEffects.add('invisibility', 2, 1)
+        }
+  })
