@@ -98,4 +98,27 @@ e.create('pote').food(food => {
     .parentModel('kubejs:item/pote')
     .group('food')
     .rarity('epic')
+
+//! ?????????????
+e.create('f_fruit').food(food => {
+    food
+    .hunger(50)
+    .saturation(50)
+    .alwaysEdible()
+    .fastToEat()
+    .effect('instant_health', 500, 254, 1)
+    .effect('regeneration', 500, 254, 1)
+    .effect('strength', 500, 254, 1)
+    .effect('haste', 500, 254, 1)
+    .effect('resistance', 500, 254, 1)
+    .effect('fire_resistance', 500, 254, 1)
+    .effect('night_vision', 500, 254, 1)
+    .effect('hero_of_the_village', 500, 254, 1)
+    .effect('speed', 500, 1, 1)
+    .eaten(ctx => {
+    })})
+    .displayName('???')
+    .texture('kubejs:item/foods/ffruit')
+    .group('food')
+    .rarity('epic')
 })
