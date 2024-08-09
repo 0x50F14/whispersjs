@@ -125,5 +125,10 @@ e.create('invisibility_magatama')
 .texture('kubejs:item/misc/magatama')
 .rarity('epic')
 .unstackable()
-//! CLOWN STICK
+//! ATLAS FEATHER
+e.create('atlas_feather')
+.displayName("Pena do Atlas")
+.parentModel('kubejs:item/atlasfeather')
+.rarity('epic')
+.unstackable()
 })

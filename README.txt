@@ -1,1 +1,1 @@
-Kubejs for SSMP
+KubeJS for SSMP
