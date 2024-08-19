@@ -96,4 +96,24 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/neeko_set/neeko_greatsword")
     .tier("sussurro")
     .rarity("epic");
+
+  //* SHADOWFELL
+  e.create("shadowfell", "sword")
+    .displayName("Shadowfell")
+    .texture("kubejs:item/weapons/shadowfell")
+    .tier("sussurro")
+    .rarity("epic");
+  //* D'ENTELLION KATANA
+  e.create("dentellion_katana", "sword")
+    .displayName("D'entellion Katana")
+    .texture("kubejs:item/weapons/dentellion_katana")
+    .tier("sussurro")
+    .rarity("epic");
+  //* D'ENTELLION GREATAXE
+  e.create("dentellion_greataxe", "sword")
+    .displayName("D'entellion Greataxe")
+    .texture("kubejs:item/weapons/dentellion_greataxe")
+    .tier("sussurro")
+    .rarity("epic");
+
 });

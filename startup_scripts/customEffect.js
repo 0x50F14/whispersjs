@@ -5,4 +5,7 @@ StartupEvents.registry('mob_effect', event => {
   event.create('corruption2')
   .color(0xFEBA4F)
   .harmful()
+  event.create('apaixonada_pela_sophie')
+    .color(0xFF0000)
+    .harmful()
 })
