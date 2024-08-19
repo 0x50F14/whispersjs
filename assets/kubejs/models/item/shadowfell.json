@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "kubejs:/item/shadowfell",
-		"particle": "kubejs:/item/shadowfell"
+		"1": "kubejs:item/shadowfell",
+		"particle": "kubejs:item/shadowfell"
 	},
 	"elements": [
 		{
