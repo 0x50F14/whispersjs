@@ -100,19 +100,19 @@ StartupEvents.registry("item", (e) => {
   //* SHADOWFELL
   e.create("shadowfell", "sword")
     .displayName("Shadowfell")
-    .texture("kubejs:item/weapons/shadowfell")
+    .texture("kubejs:item/shadowfell")
     .tier("sussurro")
     .rarity("epic");
   //* D'ENTELLION KATANA
   e.create("dentellion_katana", "sword")
     .displayName("D'entellion Katana")
-    .texture("kubejs:item/weapons/dentellion_katana")
+    .texture("kubejs:item/dentellion_katana")
     .tier("sussurro")
     .rarity("epic");
   //* D'ENTELLION GREATAXE
   e.create("dentellion_greataxe", "sword")
     .displayName("D'entellion Greataxe")
-    .texture("kubejs:item/weapons/dentellion_greataxe")
+    .texture("kubejs:item/dentellion_greataxe")
     .tier("sussurro")
     .rarity("epic");
 

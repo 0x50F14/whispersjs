@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "kubejs:/item/weapons/gloomsteel_greataxe",
-		"particle": "kubejs:/item/weapons/gloomsteel_greataxe"
+		"1": "kubejs:/item/dentellion_greataxe",
+		"particle": "kubejs:/item/dentellion_greataxe"
 	},
 	"elements": [
 		{

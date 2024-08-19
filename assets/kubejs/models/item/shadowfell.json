@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "kubejs:/item/weapons/windreaper",
-		"particle": "kubejs:/item/weapons/windreaper"
+		"1": "kubejs:/item/shadowfell",
+		"particle": "kubejs:/item/shadowfell"
 	},
 	"elements": [
 		{
