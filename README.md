@@ -15,7 +15,6 @@ Extraia o .zip e renomeie a pasta para kubejs
 ```
 Substitua a pasta atual na .minecraft pela baixada
 ```
-## 💻 Outros
 
 > [!NOTE]
 > Mais informaçoes no servidor do discord, no canal `#ㆍ👻／ㆍavisos-smpㆍ𑣲ㆍ`
