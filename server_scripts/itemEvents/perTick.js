@@ -1,20 +1,7 @@
-//! SYMPHONY OF THE SEAS EFFECT
-const checkForIDs = [
-    "kubejs:symphony_of_the_seas"
-];
-PlayerEvents.tick(tick =>{
-    let player = tick.player
-    let inventory = player.inventory.getAllItems();
-    for(const item of inventory)
-        if(checkForIDs.includes(item.id) && tick.player.isInWater()){
-            player.potionEffects.add('strength', 1, 2)
-            player.potionEffects.add('water_breathing', 1, 0)
-        }
-})
-
 //! MAGATAMA
 PlayerEvents.tick(tick =>{
     let player = tick.player
+    if (player.username.string != "helokitten") return;
     let inventory = player.inventory.getAllItems();
     for(const item of inventory)
         if("kubejs:strength_magatama" == item.id){
