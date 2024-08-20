@@ -65,4 +65,10 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/crimson_heart")
     .rarity("epic")
     .unstackable();
+  //! SOPHIE'S LETTER
+  e.create("the_star")
+    .displayName("A Estrela")
+    .texture("kubejs:item/the_star")
+    .rarity("epic")
+    .unstackable();
 });

@@ -20,3 +20,30 @@ event.target.entity.tell(Text.green('Vacina aplicada em: '+ event.target.entity.
 event.target.entity.tell(Text.green(new Date().toLocaleDateString()))
 event.target.entity.tell(Text.green("------------------------------"))
 })
+
+//! SOPHIE LETTERS
+ItemEvents.rightClicked("kubejs:the_star", event => {
+    let player = event.player
+    if (player.username == "luhgplays"){
+    event.player.tell(Text.red("-------------------------------------------------"))
+        event.player.tell(Text.red("Para: Sabine."))
+        event.player.tell(Text.red(""))
+        event.player.tell(Text.red("Meu bem, eu preciso ser breve."))
+        event.player.tell(Text.red("Tem algo para voce no meu closet."))
+        event.player.tell(Text.red("No armario da direita, na terceira gaveta, em baixo da blusa branca"))
+        event.player.tell(Text.red("Eu espero que voce goste"))
+        event.player.tell(Text.red("Com amor, Sophie"))
+        event.player.tell(Text.red("-------------------------------------------------"))
+        player.addItemCooldown('kubejs:sophies_letter', 300)}
+    if (player.username == "Kray342"){
+        event.player.tell(Text.redx("-------------------------------------------------"))
+        event.player.tell(Text.red("Para: Rem."))
+        event.player.tell(Text.red(""))
+        event.player.tell(Text.red("Filho, a mmamae precisa ser rapida.."))
+        event.player.tell(Text.red("A estrela me prometeu que iria te entregar isso"))
+        event.player.tell(Text.red("Fiquei sabendo que voce queria ter uma.."))
+        event.player.tell(Text.red("Da sua querida mae, Sophie"))
+        event.player.tell(Text.red("-------------------------------------------------"))
+        event.server.runCommandSilent(`give ${event.player.username} minecraft:spawn_egg_centipede`);
+        player.addItemCooldown('kubejs:sophies_letter2', 300)}
+})
