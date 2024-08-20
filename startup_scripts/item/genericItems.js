@@ -59,4 +59,10 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/cbussola")
     .rarity("epic")
     .unstackable();
+  //! CRIMSON HEART
+  e.create("crimson_heart")
+    .displayName("crimson_heart")
+    .texture("kubejs:item/crimson_heart")
+    .rarity("epic")
+    .unstackable();
 });

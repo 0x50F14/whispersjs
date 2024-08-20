@@ -16,3 +16,16 @@ PlayerEvents.tick(tick =>{
             player.potionEffects.add('invisibility', 2, 1)
         }
   })
+
+//! CRIMSON HEART
+const checkForIDs = [
+    "kubejs:crimson_heart"
+];
+PlayerEvents.tick(tick =>{
+    let player = tick.player
+    let inventory = player.inventory.getAllItems();
+    for(const item of inventory)
+        if(checkForIDs.includes(item.id) && tick.player.isInWater()){
+            player.potionEffects.add('regeneration', 1, 2)
+        }
+})
