@@ -19,3 +19,7 @@ Substitua a pasta atual na .minecraft pela baixada
 > [!NOTE]
 > Mais informaçoes no servidor do discord, no canal `#ㆍ👻／ㆍavisos-smpㆍ𑣲ㆍ`
 
+## Créditos adicionais
+- KubeJS
+    - [Site](https://kubejs.com/)
+    - [Discord](https://discord.com/invite/lat)
