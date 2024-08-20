@@ -1,5 +1,4 @@
 StartupEvents.registry("item", (e) => {
-  //* NEEKO AXE
   e.create("neeko_axe", "axe")
     .displayName("Machado do Neeko")
     .parentModel("kubejs:item/neeko_set/neeko_axe")
