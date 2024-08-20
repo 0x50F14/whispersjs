@@ -22,7 +22,7 @@ event.target.entity.tell(Text.green("------------------------------"))
 })
 
 //! SOPHIE LETTERS
-ItemEvents.rightClicked("kubejs:sophies_letter", event => {
+ItemEvents.rightClicked("kubejs:the_star", event => {
     let player = event.player
     if (player.username == "luhgplays"){
     event.player.tell(Text.red("-------------------------------------------------"))
