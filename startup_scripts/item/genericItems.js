@@ -65,4 +65,20 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/crimson_heart")
     .rarity("epic")
     .unstackable();
+  //! CRIMSON HEART
+  e.create("sophies_letter")
+    .displayName("sophies_letter")
+    .texture("kubejs:item/crimson_heart")
+    .rarity("epic")
+    .unstackable();
+  e.create("sophies_letter2")
+    .displayName("sophies_letter2")
+    .texture("kubejs:item/crimson_heart")
+    .rarity("epic")
+    .unstackable();
+    e.create("sophies_letter3")
+    .displayName("sophies_letter3")
+    .texture("kubejs:item/crimson_heart")
+    .rarity("epic")
+    .unstackable();
 });
