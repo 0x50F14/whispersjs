@@ -6,6 +6,13 @@ ItemEvents.toolTierRegistry((event) => {
     tier.level = 5;
     tier.enchantmentValue = 14;
   });
+  event.add("ninguem", (tier) => {
+    tier.uses = 999;
+    tier.speed = 8.0;
+    tier.attackDamageBonus = 20.0;
+    tier.level = 5;
+    tier.enchantmentValue = 14;
+  });
 });
 StartupEvents.registry("item", (e) => {
   //! KNIFE
@@ -20,10 +27,10 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/weapons/dagger")
     .tier("sussurro")
     .rarity("epic");
-  //* NINGUEM WEAPON
+  //! NINGUEM WEAPON
   e.create("ninguem_punch", "sword")
     .displayName("Soco de Ninguem")
     .texture("kubejs:item/weapons/ninguem_weapon")
-    .tier("sussurro")
+    .tier("ninguem")
     .rarity("epic");    
 });

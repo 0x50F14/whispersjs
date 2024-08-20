@@ -1,20 +1,21 @@
-StartupEvents.registry("item", (e) => {
-  ItemEvents.toolTierRegistry((event) => {
-    event.add("sussurros_scynthe", (tier) => {
-      tier.uses = 999;
-      tier.speed = 8.0;
-      tier.attackDamageBonus = 11.0;
-      tier.level = 5;
-      tier.enchantmentValue = 14;
-    });
-    event.add("sussurros_mini_scynthe", (tier) => {
-      tier.uses = 999;
-      tier.speed = 8.0;
-      tier.attackDamageBonus = 12.0;
-      tier.level = 5;
-      tier.enchantmentValue = 14;
-    });
+ItemEvents.toolTierRegistry((event) => {
+  event.add("sussurros_scynthe", (tier) => {
+    tier.uses = 999;
+    tier.speed = 8.0;
+    tier.attackDamageBonus = 11.0;
+    tier.level = 5;
+    tier.enchantmentValue = 14;
   });
+  event.add("sussurros_mini_scynthe", (tier) => {
+    tier.uses = 999;
+    tier.speed = 8.0;
+    tier.attackDamageBonus = 12.0;
+    tier.level = 5;
+    tier.enchantmentValue = 14;
+  });
+});
+StartupEvents.registry("item", (e) => {
+  
   //! SHADOWFELL
   e.create("shadowfell", "sword")
     .displayName("Shadowfell")

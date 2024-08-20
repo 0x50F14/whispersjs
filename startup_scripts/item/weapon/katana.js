@@ -1,13 +1,14 @@
-StartupEvents.registry("item", (e) => {
-  ItemEvents.toolTierRegistry((event) => {
-    event.add("sussurros_katana", (tier) => {
-      tier.uses = 999;
-      tier.speed = 8.0;
-      tier.attackDamageBonus = 11.0;
-      tier.level = 5;
-      tier.enchantmentValue = 14;
-    });
+
+ItemEvents.toolTierRegistry((event) => {
+  event.add("sussurros_katana", (tier) => {
+    tier.uses = 999;
+    tier.speed = 8.0;
+    tier.attackDamageBonus = 11.0;
+    tier.level = 5;
+    tier.enchantmentValue = 14;
   });
+});
+StartupEvents.registry("item", (e) => {
   //// NOGITSUNE
   e.create("nogitsune", "sword")
     .displayName("Nogitsune")
