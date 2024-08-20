@@ -24,7 +24,7 @@ event.target.entity.tell(Text.green("------------------------------"))
 //! SOPHIE LETTERS
 ItemEvents.rightClicked("kubejs:sophies_letter", event => {
     let player = event.player
-    if (player.username != "luhgplays") return;
+    if (player.username == "luhgplays"){
     event.player.tell(Text.red("-------------------------------------------------"))
         event.player.tell(Text.red("Para: Sabine."))
         event.player.tell(Text.red(""))
@@ -34,38 +34,16 @@ ItemEvents.rightClicked("kubejs:sophies_letter", event => {
         event.player.tell(Text.red("Eu espero que voce goste"))
         event.player.tell(Text.red("Com amor, Sophie"))
         event.player.tell(Text.red("-------------------------------------------------"))
-        ////  event.server.runCommandSilent(`give ${event.player.username} kubejs:`);
-        player.addItemCooldown('kubejs:sophies_letter', 300)
-})
-
-ItemEvents.rightClicked("kubejs:sophies_letter2", event => {
-    let player = event.player
-    if (player.username != "Kray342") return;
+        player.addItemCooldown('kubejs:sophies_letter', 300)}
+    if (player.username == "Kray342"){
         event.player.tell(Text.redx("-------------------------------------------------"))
         event.player.tell(Text.red("Para: Rem."))
         event.player.tell(Text.red(""))
         event.player.tell(Text.red("Filho, a mmamae precisa ser rapida.."))
-        event.player.tell(Text.red("A estrela me ajudou a te entregar isso"))
-        event.player.tell(Text.red("Fiquei sabendo que voce queria ter uma"))
+        event.player.tell(Text.red("A estrela me prometeu que iria te entregar isso"))
+        event.player.tell(Text.red("Fiquei sabendo que voce queria ter uma.."))
         event.player.tell(Text.red("Da sua querida mae, Sophie"))
         event.player.tell(Text.red("-------------------------------------------------"))
-        event.server.runCommandSilent(`give ${event.player.username} kubejs:`);
-        player.addItemCooldown('kubejs:sophies_letter2', 300)
-    
-})
-ItemEvents.rightClicked("kubejs:sophies_letter2", event => {
-    let player = event.player
-    if (player.username != "zlrafa") return;
-        event.player.tell(Text.red("-------------------------------------------------"))
-        event.player.tell(Text.red("Teste"))
-        event.player.tell(Text.red("Teste"))
-        event.player.tell(Text.red("Teste"))
-        event.player.tell(Text.red("-------------------------------------------------"))
-        player.addItemCooldown('kubejs:sophies_letter2', 300)
-})
-
-ItemEvents.rightClicked("kubejs:sophies_letter3", event => {
-    let player = event.player
-    if (player.username != "luhgplays") return;
-    player.addItemCooldown('kubejs:sophies_letter', 300)
+        event.server.runCommandSilent(`give ${event.player.username} minecraft:spawn_egg_centipede`);
+        player.addItemCooldown('kubejs:sophies_letter2', 300)}
 })
