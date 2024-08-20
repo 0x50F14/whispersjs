@@ -25,7 +25,7 @@ PlayerEvents.tick(tick =>{
     let player = tick.player
     let inventory = player.inventory.getAllItems();
     for(const item of inventory)
-        if(checkForIDs.includes(item.id) && tick.player.isInWater()){
+        if(checkForIDs.includes(item.id)){
             player.potionEffects.add('regeneration', 1, 2)
         }
 })
