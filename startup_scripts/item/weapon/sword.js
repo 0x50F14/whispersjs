@@ -2,7 +2,7 @@ ItemEvents.toolTierRegistry((event) => {
   event.add("sussurros_sword", (tier) => {
     tier.uses = 999;
     tier.speed = 8.0;
-    tier.attackDamageBonus = 8.0;
+    tier.attackDamageBonus = 9.0;
     tier.level = 5;
     tier.enchantmentValue = 14;
   });
