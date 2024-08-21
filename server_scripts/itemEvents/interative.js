@@ -58,6 +58,5 @@ ItemEvents.rightClicked("kubejs:the_star", event => {
         event.player.tell(Text.white("Eu te amo, Rem"))
         event.player.tell(Text.white("Da sua querida mãe, Sophie"))
         event.player.tell(Text.white("-------------------------------------------------"))
-        event.server.runCommandSilent(`give ${event.player.username} minecraft:spawn_egg_centipede`);}
     player.addItemCooldown('kubejs:sophies_letter', 300)
 })
