@@ -57,6 +57,6 @@ ItemEvents.rightClicked("kubejs:the_star", event => {
         event.player.tell(Text.white("Fiquei sabendo que você queria ter uma dessas.."))
         event.player.tell(Text.white("Eu te amo, Rem"))
         event.player.tell(Text.white("Da sua querida mãe, Sophie"))
-        event.player.tell(Text.white("-------------------------------------------------"))
+        event.player.tell(Text.white("-------------------------------------------------"))}
     player.addItemCooldown('kubejs:sophies_letter', 300)
 })
