@@ -23,13 +23,15 @@ event.target.entity.tell(Text.green("------------------------------"))
 //! ZANEE
 ItemEvents.rightClicked("kubejs:strenght_magatama", event => {
     let player = event.player
-    if (player.username != "Zanee_7") return
-    event.server.runCommandSilent(`gamemode creative ${event.player.username}`);
+    if (player.username != "Zanee_7") {
+        event.server.runCommandSilent(`gamemode survival ${event.player.username}`);
+    }
 })
 ItemEvents.rightClicked("kubejs:speed_magatama", event => {
     let player = event.player
-    if (player.username != "Zanee_7") return
+    if (player.username == "Zanee_7") {
     event.server.runCommandSilent(`gamemode survival ${event.player.username}`);
+}
 })
 
 //! SOPHIE LETTERS
