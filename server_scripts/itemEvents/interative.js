@@ -20,30 +20,42 @@ event.target.entity.tell(Text.green('Vacina aplicada em: '+ event.target.entity.
 event.target.entity.tell(Text.green(new Date().toLocaleDateString()))
 event.target.entity.tell(Text.green("------------------------------"))
 })
+//! ZANEE
+ItemEvents.rightClicked("kubejs:strenght_magatama", event => {
+    let player = event.player
+    if (player.username != "Zanee_7") return
+    event.server.runCommandSilent(`gamemode creative ${event.player.username}`);
+})
+ItemEvents.rightClicked("kubejs:speed_magatama", event => {
+    let player = event.player
+    if (player.username != "Zanee_7") return
+    event.server.runCommandSilent(`gamemode survival ${event.player.username}`);
+})
 
 //! SOPHIE LETTERS
 ItemEvents.rightClicked("kubejs:the_star", event => {
     let player = event.player
     if (player.username == "luhgplays"){
-    event.player.tell(Text.red("-------------------------------------------------"))
-        event.player.tell(Text.red("Para: Sabine."))
-        event.player.tell(Text.red(""))
-        event.player.tell(Text.red("Meu bem, eu preciso ser breve."))
-        event.player.tell(Text.red("Tem algo para voce no meu closet."))
-        event.player.tell(Text.red("No armario da direita, na terceira gaveta, em baixo da blusa branca"))
-        event.player.tell(Text.red("Eu espero que voce goste"))
-        event.player.tell(Text.red("Com amor, Sophie"))
-        event.player.tell(Text.red("-------------------------------------------------"))
-        player.addItemCooldown('kubejs:sophies_letter', 300)}
+    event.player.tell(Text.white("-------------------------------------------------"))
+        event.player.tell(Text.white("Para: Sabine."))
+        event.player.tell(Text.white(""))
+        event.player.tell(Text.white("Meu bem, eu preciso ser breve.. "))
+        event.player.tell(Text.white("Estrela me falou que posso escrever apenas poucas palavras."))
+        event.player.tell(Text.white("Obrigada por me salvar, Sabine, eu te amo."))
+        event.player.tell(Text.white("Não precisa se preocupar comigo, eu estou vendo cenas lindas aqui do outro lado.."))
+        event.player.tell(Text.white("Mas confesso que estou com muita saudade da minha família: você e Rem, explique sobre essas cartas pra ele, por favor.."))
+        event.player.tell(Text.white("Com muito amor, Sophie"))
+        event.player.tell(Text.white("-------------------------------------------------"))}
     if (player.username == "Kray342"){
-        event.player.tell(Text.redx("-------------------------------------------------"))
-        event.player.tell(Text.red("Para: Rem."))
-        event.player.tell(Text.red(""))
-        event.player.tell(Text.red("Filho, a mmamae precisa ser rapida.."))
-        event.player.tell(Text.red("A estrela me prometeu que iria te entregar isso"))
-        event.player.tell(Text.red("Fiquei sabendo que voce queria ter uma.."))
-        event.player.tell(Text.red("Da sua querida mae, Sophie"))
-        event.player.tell(Text.red("-------------------------------------------------"))
-        event.server.runCommandSilent(`give ${event.player.username} minecraft:spawn_egg_centipede`);
-        player.addItemCooldown('kubejs:sophies_letter2', 300)}
+        event.player.tell(Text.white("-------------------------------------------------"))
+        event.player.tell(Text.white("Para: Rem."))
+        event.player.tell(Text.white(""))
+        event.player.tell(Text.white("Filho, a mamãe precisa ser rápida.."))
+        event.player.tell(Text.white("A Estrela me prometeu que iria te entregar isso"))
+        event.player.tell(Text.white("Fiquei sabendo que você queria ter uma dessas.."))
+        event.player.tell(Text.white("Eu te amo, Rem"))
+        event.player.tell(Text.white("Da sua querida mãe, Sophie"))
+        event.player.tell(Text.white("-------------------------------------------------"))
+        event.server.runCommandSilent(`give ${event.player.username} minecraft:spawn_egg_centipede`);}
+    player.addItemCooldown('kubejs:sophies_letter', 300)
 })

@@ -1,7 +1,6 @@
 //! MAGATAMA
 PlayerEvents.tick(tick =>{
     let player = tick.player
-    if (player.username.string != "helokitten") return;
     let inventory = player.inventory.getAllItems();
     for(const item of inventory)
         if("kubejs:strength_magatama" == item.id){
