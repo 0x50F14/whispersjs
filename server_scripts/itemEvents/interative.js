@@ -21,29 +21,15 @@ event.target.entity.tell(Text.green(new Date().toLocaleDateString()))
 event.target.entity.tell(Text.green("------------------------------"))
 })
 //! ZANEE
-ItemEvents.rightClicked("kubejs:strenght_magatama", event => {
-    let player = event.player
-    if (player.username != "Zanee_7") {
-        event.server.runCommandSilent(`gamemode survival ${event.player.username}`);
-    }
-})
-ItemEvents.rightClicked("kubejs:speed_magatama", event => {
-    let player = event.player
-    if (player.username == "Zanee_7") {
-    event.server.runCommandSilent(`gamemode survival ${event.player.username}`);
-}
-})
-
-ItemEvents.rightClicked('kubejs:clown_stick', e => {{
+ItemEvents.rightClicked('kubejs:clown_stick', e => {
     if (e.entity.offHandItem == "minecraft:dirt")
         e.server.runCommandSilent(`gamemode survival ${e.player.username}`)
     if (e.entity.offHandItem == "minecraft:cobblestone")
         e.server.runCommandSilent(`gamemode creative ${e.player.username}`)
-    e.player.addItemCooldown('kubejs:clown_stick', 5)}
+    e.player.addItemCooldown('kubejs:clown_stick', 5)
 })
 
 //! SOPHIE LETTERS
-
 const family = [
     "luhgplays", "Kray342"
 ];

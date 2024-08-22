@@ -17,7 +17,6 @@ PlayerEvents.tick(tick =>{
         }
     }
   })
-
 //! CRIMSON HEART
 const checkForIDs = [
     "kubejs:crimson_heart"
