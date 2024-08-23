@@ -28,7 +28,6 @@ ItemEvents.rightClicked('kubejs:clown_stick', e => {
         e.server.runCommandSilent(`gamemode creative ${e.player.username}`)
     e.player.addItemCooldown('kubejs:clown_stick', 5)
 })
-
 ItemEvents.rightClicked("kubejs:wheel_of_fortune", event => {
     let player = event.player
     event.player.tell(Text.white("Uma carta normal de tarot: A Roda da Fortuna"))
