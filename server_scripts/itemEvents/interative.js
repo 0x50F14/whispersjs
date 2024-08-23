@@ -20,30 +20,81 @@ event.target.entity.tell(Text.green('Vacina aplicada em: '+ event.target.entity.
 event.target.entity.tell(Text.green(new Date().toLocaleDateString()))
 event.target.entity.tell(Text.green("------------------------------"))
 })
+//! ZANEE
+ItemEvents.rightClicked('kubejs:clown_stick', e => {
+    if (e.entity.offHandItem == "minecraft:dirt")
+        e.server.runCommandSilent(`gamemode survival ${e.player.username}`)
+    if (e.entity.offHandItem == "minecraft:cobblestone")
+        e.server.runCommandSilent(`gamemode creative ${e.player.username}`)
+    e.player.addItemCooldown('kubejs:clown_stick', 5)
+})
 
 //! SOPHIE LETTERS
+const family = [
+    "luhgplays", "Kray342"
+];
+const satimeres = [
+    "Zanee_7", "nana01s", "hellokitten", "zinmood", "anatw", "plsNeves"
+]
+const family2 = [
+    "GRAaPPY", "Japoggers"
+]
+
 ItemEvents.rightClicked("kubejs:the_star", event => {
     let player = event.player
-    if (player.username == "luhgplays"){
-    event.player.tell(Text.red("-------------------------------------------------"))
-        event.player.tell(Text.red("Para: Sabine."))
-        event.player.tell(Text.red(""))
-        event.player.tell(Text.red("Meu bem, eu preciso ser breve."))
-        event.player.tell(Text.red("Tem algo para voce no meu closet."))
-        event.player.tell(Text.red("No armario da direita, na terceira gaveta, em baixo da blusa branca"))
-        event.player.tell(Text.red("Eu espero que voce goste"))
-        event.player.tell(Text.red("Com amor, Sophie"))
-        event.player.tell(Text.red("-------------------------------------------------"))
-        player.addItemCooldown('kubejs:sophies_letter', 300)}
-    if (player.username == "Kray342"){
-        event.player.tell(Text.redx("-------------------------------------------------"))
-        event.player.tell(Text.red("Para: Rem."))
-        event.player.tell(Text.red(""))
-        event.player.tell(Text.red("Filho, a mmamae precisa ser rapida.."))
-        event.player.tell(Text.red("A estrela me prometeu que iria te entregar isso"))
-        event.player.tell(Text.red("Fiquei sabendo que voce queria ter uma.."))
-        event.player.tell(Text.red("Da sua querida mae, Sophie"))
-        event.player.tell(Text.red("-------------------------------------------------"))
-        event.server.runCommandSilent(`give ${event.player.username} minecraft:spawn_egg_centipede`);
-        player.addItemCooldown('kubejs:sophies_letter2', 300)}
+
+    if(family.includes(player.username)) {
+        if (player.username == "luhgplays"){
+        event.player.tell(Text.white("-------------------------------------------------"))
+            event.player.tell(Text.white("Para: Sabine."))
+            event.player.tell(Text.white(""))
+            event.player.tell(Text.green("Io non ho bisogno di denaro."))
+            event.player.tell(Text.green("Ho bisogno di sentimenti."))
+            event.player.tell(Text.green("Di parole, di parole scelte sapientemente,"))
+            event.player.tell(Text.green("di fiori, detti pensieri,"))
+            event.player.tell(Text.green("di rose, dette presenze,"))
+            event.player.tell(Text.green("di sogni, che abitino gli alberi,"))
+            event.player.tell(Text.green("di canzoni che faccian danzar le statue,"))
+            event.player.tell(Text.green("di stelle che mormorino all’orecchio degli amanti…"))
+            event.player.tell(Text.green("Ho bisogno di poesia,"))
+            event.player.tell(Text.green("questa magia che brucia la pesantezza delle parole,"))
+            event.player.tell(Text.green("che risveglia le emozioni e dà colori nuovi."))
+            event.player.tell(Text.white(""))
+            event.player.tell(Text.white("Eu preciso de você.. do meu lado."))
+            event.player.tell(Text.white("Com muito amor, Sophie"))
+            event.player.tell(Text.white("-------------------------------------------------"))
+            player.addItemCooldown('kubejs:sophies_letter', 700)}
+        else if (player.username == "Kray342"){
+            event.player.tell(Text.white("-------------------------------------------------"))
+            event.player.tell(Text.white("Para: Rem."))
+            event.player.tell(Text.white(""))
+            event.player.tell(Text.white("Filho, a mamãe precisa ser rápida.."))
+            event.player.tell(Text.white("A Estrela me prometeu que iria te entregar isso"))
+            event.player.tell(Text.white("Fiquei sabendo que você queria ter uma dessas.."))
+            event.player.tell(Text.white("Eu te amo, Rem"))
+            event.player.tell(Text.white("Da sua querida mãe, Sophie"))
+            event.player.tell(Text.white(""))
+            event.player.tell(Text.white("PS: Fiquei sabendo da escola, se comporte amor"))
+            event.player.tell(Text.white("-------------------------------------------------"))
+            player.addItemCooldown('kubejs:sophies_letter', 700)}
+        else{
+            event.player.tell(Text.white("..."))
+        }
+    }else if(family2.includes(player.username)) {
+        event.player.tell(Text.white("-------------------------------------------------"))
+        event.player.tell(Text.white("Para: Neeko e Orpheu."))
+        event.player.tell(Text.white(""))
+        event.player.tell(Text.white("Nao posso escrever muito, Estrela falou que isso é o maximo que consigo, então serei breve"))
+        event.player.tell(Text.white("Obrigada pela ajuda de vocês nisso tudo, e por apoiar a Sabine,"))
+        event.player.tell(Text.white("Fiquei sabendo do que aconteceu, Neeko, espero que você esteja bem!"))
+        event.player.tell(Text.white("Da amiga e co-mãe de vocês, Sophie"))
+        event.player.tell(Text.white(""))
+        event.player.tell(Text.white("PS: Cuidem do Rem, por favor"))
+        event.player.tell(Text.white("-------------------------------------------------"))
+        player.addItemCooldown('kubejs:sophies_letter', 700)
+    }
+    else {
+        event.player.tell(Text.white("Uma carta normal de tarot: A Estrela"))
+        player.addItemCooldown('kubejs:sophies_letter', 700)
+    }
 })

@@ -1,7 +1,7 @@
 //! MAGATAMA
 PlayerEvents.tick(tick =>{
     let player = tick.player
-    if (player.username.string != "helokitten") return;
+    if (player.username == "helokitten"){
     let inventory = player.inventory.getAllItems();
     for(const item of inventory)
         if("kubejs:strength_magatama" == item.id){
@@ -15,8 +15,8 @@ PlayerEvents.tick(tick =>{
         }else if("kubejs:invisibility_magatama" == item.id){
             player.potionEffects.add('invisibility', 2, 1)
         }
+    }
   })
-
 //! CRIMSON HEART
 const checkForIDs = [
     "kubejs:crimson_heart"
