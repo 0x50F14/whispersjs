@@ -19,7 +19,7 @@ StartupEvents.registry("item", (e) => {
   e.create("miguel_sword", "sword")
     .displayName("Espada do Miguel")
     .parentModel("kubejs:item/emojo")
-    .tier("sussurros_sword")
+    .tier("sussurros_greatsword")
     .rarity("epic");
 });
   

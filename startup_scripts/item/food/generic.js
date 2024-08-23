@@ -32,7 +32,7 @@ StartupEvents.registry("item", (e) => {
         .alwaysEdible()
         .fastToEat()
         .effect("instant_health", 500, 254, 1)
-        .effect("rSegeneration", 500, 254, 1)
+        .effect("regeneration", 500, 254, 1)
         .effect("strength", 500, 254, 1)
         .effect("haste", 500, 254, 1)
         .effect("resistance", 500, 254, 1)
