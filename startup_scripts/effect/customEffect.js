@@ -1,23 +1,13 @@
-StartupEvents.registry('mob_effect', event => {
-  event.create('corruption')
-    .color(0xFEBA4F)
-    .harmful()
-  event.create('corruption2')
-    .color(0xFEBA4F)
-    .harmful()
-  event.create('apaixonada_pela_sophie')
-    .color(0xFF0000)
-    .beneficial()
-  event.create('apaixonado_pela_nana')
-    .color(0xFF0000)
-    .beneficial()
-  event.create('apaixonada_pelo_azeroth')
-    .color(0xFF0000)
-    .beneficial()
-  event.create('apaixonada_pela_amelia')
-    .color(0xFF0000)
-    .beneficial()
-    event.create('apaixonada_pela_xiv')
-      .color(0xFF0000)
-      .beneficial()
-})
+StartupEvents.registry("mob_effect", (event) => {
+  event.create("corruption").color(0xfeba4f).harmful();
+  event.create("corruption2").color(0xfeba4f).harmful();
+  event.create("apaixonada_pela_sophie").color(0xff0000).beneficial();
+  event.create("apaixonado_pela_nana").color(0xff0000).beneficial();
+  event.create("apaixonada_pelo_azeroth").color(0xff0000).beneficial();
+  event.create("apaixonada_pela_amelia").color(0xff0000).beneficial();
+  event.create("apaixonada_pela_xiv").color(0xff0000).beneficial();
+  event.create("apaixonada_pela_aria").color(0xff0000).beneficial();
+  event.create("apaixonada_pela_stone").color(0xff0000).beneficial();
+  event.create("apaixonado_pelo_atlas").color(0xff0000).beneficial();
+  event.create("apaixonado_pelo_dionisio").color(0xff0000).beneficial();
+});
