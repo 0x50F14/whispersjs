@@ -20,12 +20,6 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/demon_sword")
     .tier("sussurros_sword")
     .rarity("epic");
-  //! MIGUEL'S SWORD
-  e.create("miguel_sword", "sword")
-    .displayName("Espada do Miguel")
-    .texture("kubejs:item/weapons/miguel_sword")
-    .tier("sussurros_sword")
-    .rarity("epic");
   //! CLOWN STICK
   e.create("clown_stick", "sword")
   .displayName(":o)")
