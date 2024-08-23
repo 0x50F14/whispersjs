@@ -36,6 +36,9 @@ const family = [
 const satimeres = [
     "Zanee_7", "nana01s", "hellokitten", "zinmood", "anatw", "plsNeves"
 ]
+const nana = [
+    "nana01s"
+]
 const family2 = [
     "GRAaPPY", "Japoggers"
 ]
@@ -93,8 +96,37 @@ ItemEvents.rightClicked("kubejs:the_star", event => {
         event.player.tell(Text.white("-------------------------------------------------"))
         player.addItemCooldown('kubejs:sophies_letter', 700)
     }
+    else if(family2.includes(player.username)) {
+        event.player.tell(Text.white("-------------------------------------------------"))
+        event.player.tell(Text.white("Para: Nana."))
+        event.player.tell(Text.white(""))
+        event.player.tell(Text.white("Nana, fiquei sabendo do que aconteceu com você,"))
+        event.player.tell(Text.white("Te desejo rapidas melhoras, estou com saudade."))
+        event.player.tell(Text.white("Preciso ser rapida no que escrevo, em breve entrarei em!"))
+        event.player.tell(Text.white("contato novamente, a Estrela esta me ajudando"))
+        event.player.tell(Text.white("De sua amiga, Sophie"))
+        event.player.tell(Text.white(""))
+        event.player.tell(Text.white("PS: Se afasta desse payaso"))
+        event.player.tell(Text.white("-------------------------------------------------"))
+        player.addItemCooldown('kubejs:sophies_letter', 700)
+    }
     else {
         event.player.tell(Text.white("Uma carta normal de tarot: A Estrela"))
         player.addItemCooldown('kubejs:sophies_letter', 700)
     }
+})
+ItemEvents.rightClicked("kubejs:wheel_of_fortune", event => {
+    let player = event.player
+    event.player.tell(Text.white("Uma carta normal de tarot: A Roda da Fortuna"))
+    player.addItemCooldown('kubejs:sophies_letter', 700)
+})
+ItemEvents.rightClicked("kubejs:the_magician", event => {
+    let player = event.player
+    event.player.tell(Text.white("Uma carta normal de tarot: O Mago"))
+    player.addItemCooldown('kubejs:sophies_letter', 700)
+})
+ItemEvents.rightClicked("kubejs:the_hanged", event => {
+    let player = event.player
+    event.player.tell(Text.white("Uma carta normal de tarot: O Enforcado"))
+    player.addItemCooldown('kubejs:sophies_letter', 700)
 })
