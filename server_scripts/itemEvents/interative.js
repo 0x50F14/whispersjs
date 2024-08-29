@@ -33,13 +33,3 @@ ItemEvents.rightClicked("kubejs:wheel_of_fortune", event => {
     event.player.tell(Text.white("Uma carta normal de tarot: A Roda da Fortuna"))
     player.addItemCooldown('kubejs:wheel_of_fortune', 700)
 })
-ItemEvents.rightClicked("kubejs:the_magician", event => {
-    let player = event.player
-    event.player.tell(Text.white("Uma carta normal de tarot: O Mago"))
-    player.addItemCooldown('kubejs:the_magician', 700)
-})
-ItemEvents.rightClicked("kubejs:the_hanged", event => {
-    let player = event.player
-    event.player.tell(Text.white("Uma carta normal de tarot: O Enforcado"))
-    player.addItemCooldown('kubejs:the_hanged', 700)
-})

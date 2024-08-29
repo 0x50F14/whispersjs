@@ -80,17 +80,16 @@ ItemEvents.rightClicked("kubejs:the_star", event => {
         event.player.tell(Text.white("-------------------------------------------------"))
         player.addItemCooldown('kubejs:the_star', 700)
     }
-    else if(nana.includes(player.username)) {
+    else if(satimeres.includes(player.username)) {
         event.player.tell(Text.white("-------------------------------------------------"))
-        event.player.tell(Text.white("Para: Nana."))
+        event.player.tell(Text.white("Para: Todos os satimeres."))
         event.player.tell(Text.white(""))
-        event.player.tell(Text.white("Nana, fiquei sabendo do que aconteceu com você,"))
-        event.player.tell(Text.white("Te desejo rapidas melhoras, estou com saudade."))
-        event.player.tell(Text.white("Preciso ser rapida no que escrevo, em breve entrarei em!"))
-        event.player.tell(Text.white("contato novamente, a Estrela esta me ajudando"))
-        event.player.tell(Text.white("De sua amiga, Sophie"))
+        event.player.tell(Text.white("Ola gente, estou com saudades"))
+        event.player.tell(Text.white("Espero que todos voces estejam bem, assim como suas crianças"))
+        event.player.tell(Text.white("Estrela esta me ajudando a me comunicar desde lado de ca."))
+        event.player.tell(Text.white("Da amiga de voces, Sophie"))
         event.player.tell(Text.white(""))
-        event.player.tell(Text.white("PS: Se afasta desse payaso"))
+        event.player.tell(Text.white("PS: Amo voces"))
         event.player.tell(Text.white("-------------------------------------------------"))
         player.addItemCooldown('kubejs:the_star', 700)
     }
