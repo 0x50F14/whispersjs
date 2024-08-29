@@ -21,5 +21,11 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/emojo")
     .tier("sussurros_greatsword")
     .rarity("epic");
+  //! STONES GREATSWORD
+  e.create("stonedudis", "sword")
+    .displayName("Cernunnos")
+    .parentModel("kubejs:item/stone_cernunnos")
+    .tier("sussurros_greatsword")
+    .rarity("epic");
 });
   

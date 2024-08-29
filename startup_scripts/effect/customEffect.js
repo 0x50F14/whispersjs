@@ -17,4 +17,8 @@ StartupEvents.registry("mob_effect", (event) => {
   event.create("apaixonado_pelo_atlas").color(0xff0000).beneficial();
   event.create("apaixonado_pelo_dionisio").color(0xff0000).beneficial();
 
+  event.create("apaixonado_pelo_ares").color(0xff0000).beneficial();
+  event.create("apaixonado_pelo_netuno").color(0xff0000).beneficial();
+  
+  event.create("apaixonada_pela_zanee").color(0xff0000).beneficial();
 });
