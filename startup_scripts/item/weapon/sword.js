@@ -16,7 +16,7 @@ StartupEvents.registry("item", (e) => {
     .rarity("epic");
   //! DEMON SWORD
   e.create("demon_sword", "sword")
-    .displayName("Demon Sword - Test")
+    .displayName("Demon Sword")
     .parentModel("kubejs:item/demon_sword")
     .tier("sussurros_sword")
     .rarity("epic");
