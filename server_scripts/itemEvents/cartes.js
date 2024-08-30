@@ -16,6 +16,10 @@ ItemEvents.rightClicked(event => {
     if(users.includes(player.username)) {
         if (player.username == "luhgplays"){
 
+            //? check off hand id -> if diamond/hydra -> count off hands items -> add same quantity to json file 
+            //? clear off hand items -> success
+
+
         }
     }    
     else {
