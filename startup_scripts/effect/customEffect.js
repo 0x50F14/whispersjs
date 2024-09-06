@@ -1,6 +1,6 @@
 StartupEvents.registry("mob_effect", (event) => {
-  event.create("corruption").color(0xfeba4f).harmful();
-  event.create("corruption2").color(0xfeba4f).harmful();
+  event.create("corrupcao_infernal").color(0xfeba4f).harmful();
+  event.create("degradacao_infernal").color(0xfeba4f).harmful();
 
   event.create("apaixonada_pela_sophie").color(0xff0000).beneficial();
   event.create("chloe").color(0xff0000).beneficial();

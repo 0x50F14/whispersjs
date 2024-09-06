@@ -65,4 +65,25 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/crimson_heart")
     .rarity("epic")
     .unstackable();
+  //! CC - Chloe
+  e.create("carte_de_credit_gamme")
+    .displayName("Carte de Crédit")
+    .tooltip("Cet objet appartient à Chloe. Si vous le trouvez, veuillez le retourner")
+    .texture("kubejs:item/misc/carte_chloe")
+    .rarity("epic")
+    .unstackable();
+  //! CC - Amelia
+  e.create("carte_de_credit")
+    .displayName("Carte de Crédit")
+    .tooltip("Cet objet appartient à Amélia. Si vous le trouvez, veuillez le retourner")
+    .texture("kubejs:item/misc/carte_amelia")
+    .rarity("epic")
+    .unstackable();
+  //! CC - Sophie
+  e.create("carte_de_credit_prestige")
+    .displayName("Carte de Crédit")
+    .tooltip("Cet objet appartient à Sophie. Si vous le trouvez, veuillez le retourner")
+    .texture("kubejs:item/misc/carte_sophie")
+    .rarity("epic")
+    .unstackable();
 });

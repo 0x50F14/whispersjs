@@ -8,22 +8,28 @@ ItemEvents.toolTierRegistry((event) => {
   });
 });
 StartupEvents.registry("item", (e) => {
-  //! CERNUNNOS
-  e.create("cernunnos", "sword")
-    .displayName("Cernunnos")
-    .texture("kubejs:item/weapons/cernunnos")
-    .tier("sussurros_sword")
-    .rarity("epic");
   //! DEMON SWORD
   e.create("demon_sword", "sword")
-    .displayName("Demon Sword - Test")
+    .displayName("Demon Sword")
     .parentModel("kubejs:item/demon_sword")
     .tier("sussurros_sword")
     .rarity("epic");
   //! CLOWN STICK
   e.create("clown_stick", "sword")
-  .displayName(":o)")
-  .parentModel("kubejs:item/clown_weapon")
-  .tier("sussurro")
-  .rarity("epic");
+    .displayName(":o)")
+    .parentModel("kubejs:item/clown_weapon")
+    .tier("sussurros_sword")
+    .rarity("epic");
+  //! Nana Sword
+  e.create("nana_sword", "sword")
+    .displayName("Espada da Nana")
+    .parentModel("kubejs:item/nana_set/sword")
+    .tier("sussurros_sword")
+    .rarity("epic");
+    //! Dio Sword
+    e.create("dionisio_sword", "sword")
+      .displayName("Espada do Dionisio")
+      .parentModel("kubejs:item/junior/sword")
+      .tier("sussurros_sword")
+      .rarity("epic");
 });

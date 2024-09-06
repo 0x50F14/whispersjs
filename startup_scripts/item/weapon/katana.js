@@ -15,12 +15,6 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/weapons/nogitsune")
     .tier("sussurros_sword")
     .rarity("epic");
-  //? NEEKO WEAPONS
-  e.create("neeko_spear", "sword")
-    .displayName("Lança do Neeko")
-    .parentModel("kubejs:item/neeko_set/neeko_spear")
-    .tier("sussurros_katana")
-    .rarity("epic");
   //! BRASA
   e.create("brasa_katana", "sword")
     .displayName("Brasa")

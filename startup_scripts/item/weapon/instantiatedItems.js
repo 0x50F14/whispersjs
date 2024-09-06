@@ -3,6 +3,8 @@ const $tridentItem = Java.loadClass('net.minecraft.world.item.TridentItem')
 const $ItemProperties = Java.loadClass('net.minecraft.world.item.Item$Properties')
 const $kubejs = Java.loadClass('dev.latvian.mods.kubejs.KubeJS')
 
+const $staffItem = Java.loadClass('net.minecraft.world.item.TridentItem')
+
 
 StartupEvents.registry('item', event => {
     event.createCustom('kubejs:cupid_bow', () => new $bowItem(new $ItemProperties().tab($kubejs.tab).defaultDurability(23)))
