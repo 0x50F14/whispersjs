@@ -21,5 +21,11 @@
         "category": "neutral",
         "subtitle": "Polaroid Camera Sound",
         "sounds": ["kubejs:polaroid_camera_sound"]
+    },
+
+    "chloe_music": {
+        "category": "neutral",
+        "subtitle": "Chloe music disc",
+        "sounds": ["kubejs:chloe_music"]
     }
 }

@@ -8,6 +8,7 @@ StartupEvents.registry('block', e => {
     .noValidSpawns(true)
     .unbreakable()
     .renderType('translucent')
+    
     .model('kubejs:block/maguinho')
     //! plushie 2 (roda)
     e.create("roda_plushie") 
@@ -19,6 +20,7 @@ StartupEvents.registry('block', e => {
     .unbreakable()
     .renderType('translucent')
     .model('kubejs:block/rodinha')
+
     //! plushie 3 (axolot)
     e.create("kubejs_plushie") 
     .displayName("Axolot Plushie")
