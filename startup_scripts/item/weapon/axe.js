@@ -13,12 +13,12 @@ StartupEvents.registry("item", (e) => {
   e.create("dentellion_greataxe", "sword")
     .displayName("D'entellion Greataxe")
     .texture("kubejs:item/dentellion_greataxe")
-    .tier("sussurro")
-    //! NEEKO GREATSWORD
+    .tier("sussurros_axe")
     .rarity("epic");
+  //! NEEKO GREATSWORD
   e.create("neeko_greatsword", "sword")
-    .displayName("GreatSword do Neeko")
+    .displayName("Greatsword do Neeko")
     .parentModel("kubejs:item/neeko_set/neeko_greatsword")
-    .tier("sussurro")
+    .tier("sussurros_axe")
     .rarity("epic");
 });

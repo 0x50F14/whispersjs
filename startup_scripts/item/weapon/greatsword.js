@@ -21,10 +21,28 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/emojo")
     .tier("sussurros_greatsword")
     .rarity("epic");
-  //! STONES GREATSWORD
-  e.create("stonedudis", "sword")
+  //! OLD CERNUNNOS
+  e.create("old_cernunnos", "sword")
     .displayName("Cernunnos")
-    .parentModel("kubejs:item/stone_cernunnos")
+    .parentModel("kubejs:item/stone/old_cernunnos")
+    .tier("sussurros_greatsword")
+    .rarity("epic");
+  //! NEW CERNUNNOS
+  e.create("new_cernunnos", "sword")
+    .displayName("Cernunnos")
+    .parentModel("kubejs:item/stone/new_cernunnos")
+    .tier("sussurros_greatsword")
+    .rarity("epic");
+  //! NANA GREATSWORD
+  e.create("nana_greatsword", "sword")
+    .displayName("Nana's Greatsword")
+    .parentModel("kubejs:item/nana_set/greatsword")
+    .tier("sussurros_greatsword")
+    .rarity("epic");
+  //! DIO GREATSWORD
+  e.create("dionisio_greatsword", "sword")
+    .displayName("Dionisio's Greatsword")
+    .parentModel("kubejs:item/junior/greatsword")
     .tier("sussurros_greatsword")
     .rarity("epic");
 });
