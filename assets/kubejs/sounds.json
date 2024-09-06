@@ -27,5 +27,11 @@
         "category": "neutral",
         "subtitle": "Chloe music disc",
         "sounds": ["kubejs:chloe_music"]
+    },
+
+    "ayla_music":{
+        "category": "neutral",
+        "subtitle": "Ayla music disc",
+        "sounds": ["kubejs:ayla_music"]
     }
 }
