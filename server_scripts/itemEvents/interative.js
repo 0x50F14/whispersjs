@@ -20,11 +20,3 @@ event.target.entity.tell(Text.green('Vacina aplicada em: '+ event.target.entity.
 event.target.entity.tell(Text.green(new Date().toLocaleDateString()))
 event.target.entity.tell(Text.green("------------------------------"))
 })
-//! ZANEE
-ItemEvents.rightClicked('kubejs:clown_stick', e => {
-    if (e.entity.offHandItem == "minecraft:dirt")
-        e.server.runCommandSilent(`gamemode survival ${e.player.username}`)
-    if (e.entity.offHandItem == "minecraft:cobblestone")
-        e.server.runCommandSilent(`gamemode creative ${e.player.username}`)
-    e.player.addItemCooldown('kubejs:clown_stick', 5)
-})

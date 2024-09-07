@@ -13,4 +13,10 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/nana_set/staff")
     .tier("sussurros_staff")
     .rarity("epic");
+
+  e.create("ito_staff", "sword")
+    .displayName("Ito's Staff")
+    .parentModel("kubejs:item/kitt/staff")
+    .tier("sussurros_staff")
+    .rarity("epic");
 });
