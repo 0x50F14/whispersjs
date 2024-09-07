@@ -26,10 +26,16 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/nana_set/sword")
     .tier("sussurros_sword")
     .rarity("epic");
-    //! Dio Sword
-    e.create("dionisio_sword", "sword")
-      .displayName("Espada do Dionisio")
-      .parentModel("kubejs:item/junior/sword")
-      .tier("sussurros_sword")
-      .rarity("epic");
+  //! Dio Sword
+  e.create("dionisio_sword", "sword")
+    .displayName("Espada do Dionisio")
+    .parentModel("kubejs:item/junior/sword")
+    .tier("sussurros_sword")
+    .rarity("epic");
+  //! Ito Sword
+  e.create("ito_sword", "sword")
+    .displayName("Espada da Ito")
+    .parentModel("kubejs:item/kitt/sword")
+    .tier("sussurros_sword")
+    .rarity("epic");
 });

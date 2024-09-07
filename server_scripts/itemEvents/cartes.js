@@ -1,4 +1,3 @@
-const fs = require("fs");
 const users = ["luhgplays", "Kray342", "4Help"];
 
 const items = [
@@ -13,7 +12,10 @@ ItemEvents.rightClicked((event) => {
 
   if (!items.includes(clickedItem)) return;
 
-  if (users.includes(player.username)) {
+  if (users.includes(player.username)) {event.player.tell(
+    Text.red("Au nom de la Société Générale, nous vous informons que nos services ne sont pas disponibles dans votre région.")
+  );
+    
     player.addItemCooldown(clickedItem, 700);
   } else {
     event.player.tell(

@@ -152,6 +152,7 @@ ServerEvents.commandRegistry((event) => {
   const { commands: Commands, arguments: Arguments } = event;
   event.register(
     Commands.literal("clearlag")
+      .requires((s) => s.hasPermission(4))
       .then(
         Commands.literal("clear").executes((ctx) => {
           let server = ctx.source.getServer();
