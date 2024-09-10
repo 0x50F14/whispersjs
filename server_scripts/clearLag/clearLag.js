@@ -1,5 +1,5 @@
 // Interval for each cleanup and time until the cleaning occurs
-let Interval = 30;
+let Interval = 15;
 let cleaningTime = 1200 * Interval;
 
 // Cleaning timer setter
@@ -123,7 +123,7 @@ let clearLag = (server, reset) => {
   lastTotalClearLagResult.clear();
 
   itemList.forEach((items) => {
-    if (!blacklist.includes(items.getFullNBT().Item.id)) {
+    if (!blacklist.includes(items.getNbt().Item.id)) {
       var key = items.name;
       lastResult.add(key, items.item.count);
       lastTotalClearLagResult.add(key, items.item.count);

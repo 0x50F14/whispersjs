@@ -11,6 +11,9 @@ StartupEvents.registry("mob_effect", (event) => {
   event.create("apaixonada_pela_amelia").color(0xff0000).beneficial();
   event.create("apaixonada_pela_xiv").color(0xff0000).beneficial();
 
+  event.create("apaixonada_pela_ito").color(0xff0000).beneficial();
+  event.create("apaixonada_pela_ana").color(0xff0000).beneficial();
+
   event.create("apaixonada_pela_aria").color(0xff0000).beneficial();
   event.create("apaixonada_pela_stone").color(0xff0000).beneficial();
 
@@ -21,4 +24,5 @@ StartupEvents.registry("mob_effect", (event) => {
   event.create("apaixonado_pelo_netuno").color(0xff0000).beneficial();
   
   event.create("apaixonada_pela_zanee").color(0xff0000).beneficial();
+  event.create("apaixonada_pela_zin").color(0xff0000).beneficial();
 });
