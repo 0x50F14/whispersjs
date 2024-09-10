@@ -17,12 +17,6 @@ StartupEvents.registry("item", (e) => {
     .texture("kubejs:item/wands/star_wand")
     .rarity("epic")
     .unstackable();
-  //? STRAWBERRY WAND
-  e.create("strawberry_wand")
-    .displayName("Varinha de Morango")
-    .texture("kubejs:item/wands/strawberry_wand")
-    .rarity("epic")
-    .unstackable();
   //? CLOWN HORN
   e.create("clown_horn")
     .displayName("Buzina do Palhaço")

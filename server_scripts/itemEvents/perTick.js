@@ -1,7 +1,7 @@
 //! MAGATAMA
 PlayerEvents.tick(tick =>{
     let player = tick.player
-    if (player.username == "helokitten"){
+    if (player && player.username == "helokitten"){
     let inventory = player.inventory.getAllItems();
     for(const item of inventory)
         if("kubejs:strength_magatama" == item.id){
@@ -23,9 +23,9 @@ const checkForIDs = [
 ];
 PlayerEvents.tick(tick =>{
     let player = tick.player
-    let inventory = player.inventory.getAllItems();
+    if(player){let inventory = player.inventory.getAllItems();
     for(const item of inventory)
         if(checkForIDs.includes(item.id)){
             player.potionEffects.add('regeneration', 1, 2)
-        }
+        }}
 })

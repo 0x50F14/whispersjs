@@ -35,6 +35,36 @@
         "sounds": ["kubejs:ayla_music"]
     },
 
+    "power_music":{
+        "category": "neutral",
+        "subtitle": "Power music disc",
+        "sounds": ["kubejs:power_music"]
+    },
+
+    "ozzie_music":{
+        "category": "neutral",
+        "subtitle": "Ozzie music disc",
+        "sounds": ["kubejs:ozzie_music"]
+    },
+
+    "ary_music":{
+        "category": "neutral",
+        "subtitle": "Ary music disc",
+        "sounds": ["kubejs:ary_music"]
+    },
+
+    "korn_music":{
+        "category": "neutral",
+        "subtitle": "Korn music disc",
+        "sounds": ["kubejs:korn_music"]
+    },
+
+    "atlas_music":{
+        "category": "neutral",
+        "subtitle": "Atlas music disc",
+        "sounds": ["kubejs:atlas_music"]
+    },
+
     "newjeans_music":{
         "category": "neutral",
         "subtitle": "Newjeans - New Jeans",
