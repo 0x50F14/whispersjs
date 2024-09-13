@@ -1,6 +1,6 @@
-BlockEvents.rightClicked('kubejs:stairs', event => {
+BlockEvents.rightClicked('kubejs:rdf_stairs', event => {
     let blockResult = event.player.rayTrace().block
-    if (blockResult?.id == 'kubejs:stairs') {
+    if (blockResult?.id == 'kubejs:rdf_stairs') {
         event.player.tell("[CASSINO RODA DA FORTUNA]");
         if (event.player.mainHandItem?.id == "minecraft:emerald") {
             event.player.tell("Você está apostando " + event.player.mainHandItem.count + " esmeraldas." )
@@ -11,9 +11,9 @@ BlockEvents.rightClicked('kubejs:stairs', event => {
         }
     }
 })
-BlockEvents.rightClicked('kubejs:roullete', event => {
+BlockEvents.rightClicked('kubejs:rdf_roullete', event => {
     let blockResult = event.player.rayTrace().block
-    if (blockResult?.id == 'kubejs:roulette') {
+    if (blockResult?.id == 'kubejs:rdf_roulette') {
         event.player.tell("[CASSINO RODA DA FORTUNA]");
         if (event.player.mainHandItem?.id == "minecraft:emerald") {
             event.player.tell("Você está apostando " + event.player.mainHandItem.count + " esmeraldas." )
