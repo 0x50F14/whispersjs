@@ -4,16 +4,29 @@ StartupEvents.registry("sound_event", (e) => {
   e.create("kubejs:power_music");
   e.create("kubejs:ozzie_music");
   e.create("kubejs:ary_music");
+  e.create("kubejs:korn_music");
   e.create("kubejs:atlas_music");
   e.create("kubejs:newjeans_music");
+
+  e.create("kubejs:kmorse_1");
+  e.create("kubejs:kmorse_2");
 });
 StartupEvents.registry("item", (e) => {
+  //! KITTEN DISCs
+  e.create(`k_disc`, "music_disc")
+    .song(`kubejs:kmorse_1`, 7)
+    .displayName("[K] Disco 1")
+    .texture(`kubejs:item/music_disc/generic_disc`);
+  e.create(`k_disc2`, "music_disc")
+    .song(`kubejs:kmorse_2`, 9)
+    .displayName("[K] Disco 2")
+    .texture(`kubejs:item/music_disc/generic_disc`);
+
   //! CHLOE DISC
   e.create(`chloe_disc`, "music_disc")
     .song(`kubejs:chloe_music`, 159)
     .displayName("Música Favorita da Chloe")
-    .texture(`kubejs:item/music_disc/chloe_disc`)
-    .translationKey(`item.kubejs.chloe_disc`);
+    .texture(`kubejs:item/music_disc/chloe_disc`);
 
   //! AYLA DISC
   e.create(`ayla_disc`, "music_disc")

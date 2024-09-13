@@ -33,4 +33,10 @@ StartupEvents.registry("item", (e) => {
     .parentModel("kubejs:item/kitt/hammer")
     .tier("sussurros_hammer")
     .rarity("epic");
+  //! ZANE MOTOSERRA
+  e.create("zane_motoserra", "sword")
+    .displayName("Moto Serra")
+    .parentModel("kubejs:item/zane/motoserra")
+    .tier("sussurros_hammer")
+    .rarity("epic");
 });

@@ -13,7 +13,7 @@ ServerEvents.commandRegistry((event) => {
   );
 
   let fly = (player) => {
-    console.log(player);
+    console.log(`${player.getName().getString()} executando o comando /fly`);
     if (player.abilities.mayfly) {
       player.abilities.mayfly = false;
       player.abilities.flying = false;

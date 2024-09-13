@@ -11,10 +11,7 @@ PlayerEvents.loggedIn((e) => {
   // Verifica se encontrou algo e extrai o nome dentro das chaves, caso contrário será null
   extractedName = extractedName ? extractedName[1] : null;
   e.server.runCommandSilent(
-    `title @a subtitle {"text":"no jogo","color":"green"}`
-  );
-  e.server.runCommandSilent(
-    `title @a title {"text":"${extractedName} entrou","color":"green"}`
+    `title @a actionbar {"text":"${extractedName} entrou no jogo","color":"green"}`
   );
 });
 PlayerEvents.loggedOut((e) => {
@@ -30,9 +27,6 @@ PlayerEvents.loggedOut((e) => {
   // Verifica se encontrou algo e extrai o nome dentro das chaves, caso contrário será null
   extractedName = extractedName ? extractedName[1] : null;
   e.server.runCommandSilent(
-    `title @a subtitle {"text":"do jogo","color":"red"}`
-  );
-  e.server.runCommandSilent(
-    `title @a title {"text":"${extractedName} saiu","color":"red"}`
+    `title @a actionbar {"text":"${extractedName} saiu do jogo","color":"red"}`
   );
 });

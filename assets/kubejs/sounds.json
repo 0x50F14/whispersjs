@@ -69,5 +69,17 @@
         "category": "neutral",
         "subtitle": "Newjeans - New Jeans",
         "sounds": ["kubejs:newjeans_music"]
+    },
+
+    "kmorse_1":{
+        "category": "neutral",
+        "subtitle": "kitten morse 1",
+        "sounds": ["kubejs:kmorse_1"]
+    },
+
+    "kmorse_2":{
+        "category": "neutral",
+        "subtitle": "kitten morse 2",
+        "sounds": ["kubejs:kmorse_2"]
     }
 }
