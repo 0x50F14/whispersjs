@@ -1,3 +1,9 @@
+> [!CAUTION]
+> With the end of the project, the repository was archived and does not reflect the latest version used on the server.
+
+> [!WARNING]
+> Com o fim do projeto, o repositório foi arquivado e não reflete a versão mais recente usada no servidor.
+
 # WhispersJS
 
 > Arquivos do KubeJS para o servidor Sussurros SMP
@@ -15,8 +21,6 @@ Extraia o .zip e renomeie a pasta para kubejs
 Substitua a pasta atual na .minecraft pela baixada
 ```
 
-> [!NOTE]
-> Mais informaçoes no servidor do discord, no canal `#ㆍ👻／ㆍavisos-smpㆍ𑣲ㆍ`
 ## Créditos adicionais
 - KubeJS
     - [Site](https://kubejs.com/)
